@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <pre>
+    HTML SVG:Scalable Vector Graphics. It basically vector based graphics i XML format.
+    SVG graphics do not lose any quality if they are xoomed or resized. SVG can be animated.
+    SVG images can be created and edited with any text editor
+    SVG images can be searched, indexed,scripted and compressed
+    SVG Images are scalable 
+    SVG images can be printed with high quality at any resolution 
+</pre>
+    <pre>
+    Different between HTML SVG and HTML canvas  
+    SVG is a language for describing in XML whereas canvas draws 2D graphics on the fly with javascipt 
+    if SVG objects are changed browser automatically renders the shape whereas canvas is rendered pixel by pixel
+    SVG is resolution independent whereas canvas is resolution-dependent 
+    SVG supports event handlers whereas canvas doen't have support for event handlers.
+</pre>
+
+  1)Create svg
+<svg height="205" width=""900>
+    <line x1="10" y1="10" x2="400" y2="400" style="stroke: rgb(0, 0, 255); stroke-width:3;">
+
+    </line>
+</svg>
+
+<svg height="200" width="900">
+    <circle cx="90" cy="90" r="40" stroke="black" stroke-width="2" fill="gray"></circle>
+</svg>
+
+
+<pre>
+    HRML Canvas:element is used to draw graphics via javascipt . The "cannvas" element is only a container for graphics.
+    It is recommended to have an id attribute and width and height attribute to define the size of the canvas. To add a border,use the style attribute.
+    The properties like colors,style ,shadows , line style rectangles, paths ,transfromation, text, pixels Manipulation, composition & Image Drawing 
+    are the global attribute that are supported by the all the browsers
+</pre>
+
+<canvas id="c1" width="900" height="400 " style="border:2px solid #000000">Hello</canvas>
+
+
+</body>
+
+</html>
