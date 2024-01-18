@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,tr,th,td{
+            border: 2px solid black;
+            /* border-collapse: collapse; */
+            padding: 15px;
+            text-align: left;
+            border-spacing: 5px;
+            
+        }
+        #t1{
+            background-color: red  ;
+        }
+    </style>
+</head>
+<body>
+    <h1> HTML tables</h1>
+    <p>HTML table is the arrangment of data in row and columns in tabular format</p>
+
+    <!-- a)Defining th Table in HTML: An HTML table is defined with the table tag , each table row is defined with the tr  tag
+    A table header is defined with the th tag by default table headings are bold and centered A table data cell is defined with the td tag -->
+    
+    <table id="t1">
+        <tr>
+            <th>Name</th>
+            <th>Number</th>
+        </tr>
+        <tr>
+            <td>sachin</td>
+            <td>123</td>
+            
+        </tr>
+    </table>
+
+    <!-- b)Adding a border to an HTML table: we can add border with the css property , collapse the border ,padding , text align, borderspacing -->
+    <table  >
+        <tr>
+            <th>
+                Sports name
+            </th>
+            <th>sports name</th>
+        </tr>
+
+        <tr>
+            <td>Circket</td>
+            <td>Yuvraj</td>
+        </tr>
+        <tr>
+            <td>Hockey</td>
+            <td>Yuvraj walmiki</td>
+        </tr>
+    </table> 
+
+    <!-- c)Adding cells that span many rows in HTML Tables
+    d)Adding caption with the help of caption tag -->
+    <table>
+        <caption>Details</caption>
+        <tr>
+            <th>
+                name
+            </th>
+            <td>raj</td>
+        </tr>
+        <tr>
+            <th rowspan="2">telephone</th>
+            <td>8934586</td>
+        </tr>
+        <tr>
+            <td>9834532956</td>
+        </tr>
+    </table>
+
+
+    <h1>HTML thead tag</h1>
+    <pre>The HTML thread tag is used to provide  a header to the group of content in an HTML table. combination the tbody and tfoot 
+        element with the thread element can help to specify each part of a table i.e header,body and footer. by using these element, 
+        browsers allow the table body to scroll separatly from the header and footer.
+        the tread tag also supports the glabal attributes and event  attributes in HTML 
+        the attribute values used with thread are deprecated in the HTML5.
+    </pre>
+    
+
+    <h1>HTML tbody tag</h1>
+    <p>the tbody tag in html is used to make a group of the same type of content of body element tbody tag is the child tag 
+        parent tag of tr and td tags
+    </p>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>user id</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Shashank</td>
+                <td>44</td>
+            </tr>
+        </tbody>
+    </table>
+    <tfoot>
+        <tr>Total users</tr>
+        <td>50</td>
+    </tfoot>
+
+
+
+</body>
+</html>
