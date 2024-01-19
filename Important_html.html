@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .country {
+            background-color: black;
+            padding-top: 10px;
+            color: white;
+        }
+
+        #tag {
+
+            color: green;
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div>
+        <h1>HTML Block and Inline Element </h1>
+        <pre> <b>Block Element</b> A block element always starts on a new line and stretches out to the left and right as far as it can i.e it occupies 
+    the whole horizontal space of its parent element</pre>
+
+        <div>Block tag</div>
+
+        <pre><b>Inline Element</b>An inline element is the oppsite of the block level element it does not start on a new line and takes up only the necessary width 
+    it only occupies the space bounded by the tag defining the HTML element, instead of breaking the flow of the content</pre>
+
+        <button>inline tag</button>
+
+    </div>
+
+
+    <div>
+        <h1>HTML Class attribute</h1>
+        <pre>
+        The Class is an attribute that specifies one or more class names for an HTML element
+        Class name can be used by css and javascript to perform certain tasks for element with the specified class Name
+    </pre>
+
+        <h1 class="country">China</h1>
+        <p>China has highest poplualtion</p>
+
+        <h2 class="country">India</h2>
+        <p>India has resource rich soil</p>
+
+        <h3 class="country">pakistan</h3>
+        <p>pakistan has quality bowling attack </p>
+    </div>
+
+
+    <div>
+        <h1>HTML Id attribute</h1>
+        <pre id="tag">
+        The id attribute is a unique identifier that is used to specify the document. it is used by css and javascript to perform
+        certain task for a unique element.  it is an global attribute it can be used in all the tags.
+         
+       </pre>
+    </div>
+
+    <div>
+        <h1>HTML Frames</h1>
+        <pre>
+        the iframe in HTML stand for the inline frame The Iframe tag defines a reactagular region within the document
+        in which the browser can display a separate document, including scrollbar and borders. An lnline frame is used to embed
+        another document within the current HTML.The HTML iframe name attribute is used to specify a refrence for a iframe element 
+        The iframe is basically used ot show a webpage inside the currnet web page. the src attribute is used to specify the url 
+        of the document that occupies the iframe. 
+        
+        <h2>attribute value</h2>
+        <pre>absolute URL:it point to another webpage</pre>
+        <pre>realtive URl:it points to other files of the same webpage</pre>
+
+        </pre>
+
+        <iframe src="https://www.google.com/" frameborder="0" height="400" width="400"></iframe>
+
+        <h2>Attribute for Iframe</h2>
+
+        <!-- a)height and width:specify the size of iframe
+        b)removing border:by default iframe hqs the border around it
+        c)border style: chaning size styel and color of the iframe border
+        d)Link: An iframe can be used as the target frame for a link. Target attribute of the  link must refer to the name 
+        attribute of the iframe -->
+        <iframe src="https://www.google.com" height="400" width="400" style="border: 4px solid orange;"
+            name="iframe_a"></iframe>
+        <a href="https://leetcode.ac/" target="iframe_a">leetcode</a>
+    </div>
+
+    <div>
+        <h1>HTML responsive web Design</h1>
+        <pre>
+            HTML responsive web Design refers to the changes in web pages to automatically resize,hide,show ,shrink and expands various HTML element
+            These changes are depends on the devices and the screen size of the device.
+        </pre>
+
+        <pre>
+            a)using HTML Viewportmate tag for responsive web Design:HTML viewport reprsents the area of display or screen visisble to the user.
+            it varies from device to device this approach set the avaibale screen witdth as the 100% width of the web pages and adjust 
+            accordingly to make it responsive.
+        </pre>
+
+        <!-- <meta charset="UTF-8" name="viewport"  content="width=device-width , initial-scale=1.0"> -->
+
+        <pre>
+            b)Using responsive images:
+            Responsive images are just part of responsive website.Images that can changes their dimensions,scaling them up or down.
+            <!-- <img src="...." alt="" style="width: 100%;"> -->
+        </pre>
+
+        <pre>
+
+        <b>c)CSS media Queries</b>The media query in css is used to  create a responsive web design It means
+        that the view of a web page differs from system to system based on screen or media types.The breakpoint specifies for what 
+        device width size the content is just starting to break or deform
+        media queries can be used to check many things 
+        @width and height of the viewport
+        @widht and height of the device
+        @orientation
+        @resolution
+
+        </pre>
+
+        <!-- <style>
+            @media screen and (max-width:800px)
+            {
+                border-style: {
+                    background-color: aqua;
+                };
+            }
+            
+        </style> -->
+
+        <pre>
+        d)<b>Using Responsive layout</b>using css display  property to make the page responsive.Display layouts like 
+        flexbox,inline,blocks and grids  can be used to make design responsive.css flexbox proprerty auto adjust the content
+        accordingly to the screen width.
+        </pre>
+
+        <!-- <div class="container">
+
+        </div>
+        <style>
+            .container
+            {
+                display: flexbox;
+            }
+        </style> -->
+
+
+        <pre><b>using css gride</b>This approach uses a css display grid to create a 2D layout with other grid options
+        it allows us to decide the number of columns we want to keep and instead of rearrnaging the columns like flexbox, 
+        it adjust the content with individual column element </pre>
+
+        <!-- <style>
+            .container
+            {
+                display: grid;
+            }
+        </style> -->
+
+
+        <h1>HTML Computer Code Elements</h1>
+
+        <pre><b>code tag</b> The code tag in HTML is used to define the piece of computer code .During the creation of webpages
+        sometimes there is need to display computer programming code</pre>
+        
+        <pre>
+        <code>
+                #inclued<iostream>
+                using namespace std;
+    
+                int main()
+                {
+                    cout<<"Hello world";
+                    return 0;
+                }
+                
+        </code>
+        </pre>
+        
+
+        <pre>
+        <b>kbd tag</b>it is a pharase tag and is used to define the keyboard input. tag represents similar text that should 
+        be typed on the keyboard
+        </pre>
+
+        <kbd>Hello</kbd>
+        <kbd>Coders</kbd>
+        <kbd>Code</kbd>
+        <kbd>is</kbd>
+        <kbd>passion for Life</kbd>
+
+        <pre><b>samp tag</b> It is pharase tag and used to define the sample output text from computer program</pre>
+        <samp>Hello Coders</samp>
+
+        <pre><b>var tag</b>used to specify the variabl;e in a mathematical equation or in a computer program</pre>
+        <var>greekforgreek</var>
+    </div>
+
+    <h1>HTML5 Sematics</h1>
+    <pre>
+        semantics:Semantics elements have meaningful names which tells about the type of contnt for exmaple section ,header,footer etc
+        Non semantics:which not define what is about e.g div etc
+    </pre>
+
+    <b>Semantics</b>
+    <article>This is semantics tag</article>
+    <aside>This also semantics tag used to place the contect to sidebar</aside>
+    <details>
+        <summary>
+            hello Coders this is also sematics tag defines the additional details that the used can hide or view "summary"
+            defines a visible heading for a details element 
+        </summary>
+        <p>details</p>
+    </details>
+    <figure>used to add image with small decription</figure>
+    <main>It defines main content for the document </main>
+    <section>A page can be splite into secitons</section>
+    <nav>used to define set of navigation </nav>
+
+    <b>NON semantics</b>
+    <div>block element or division of section</div>
+    <span></span>
+
+
+    <h1>HTML Entities</h1>
+    <pre>HTML provides some menthod to display reserved characters. The characters are those characters that are either 
+        for HTML or thosed which are not present in the basic keyboards 
+        enity names are case sensitive
+    </pre>
+
+    <div>
+        <ul>Entities
+
+            <li>&reg</li>
+            <li>&auro</li>
+            <li>&yen</li>
+            <li>&gt</li>
+            <li>&copy</li>
+        </ul>
+    </div>
+
+    <h1>HTML Symbols</h1>
+
+    <div>
+        <ul>Symbols
+            <li>
+                &para; 
+            </li>
+        </ul>
+ 
+    </div>
+
+    <h1>HTML Charset</h1>
+    <pre>The web browser displayes the alphabets,numbers and some other symbols correctly 
+        this is all possible beacuse of the required character set that web browsers uses.
+        ASCII Amrican Standard Coding for Information ANSSI created this characters encoding 128 alphanumeric are their A-z a-z =/*-+ etc
+        ANSI Windows-1252 Supported 256 characters
+        ISO-8859-1 defualt character ser of HTML4 and also supports 256 characters .
+        UTF-8:UTF-8 and UTF16 standards was developed bit consist all the charcters and punctuations symbols
+    </pre>
+
+    <h1>HTML MathML</h1>
+
+    <pre>
+        The MathML Comes in HTML5 the current MathML version is 3 it was introduce in year of 2015. mathematical Markup language
+        It is used to reprsent mathmatical equeations aor expressions in web browsers like other HTML elements.
+    </pre>
+
+    
+
+
+      
+
+
+</body>
+
+</html>
