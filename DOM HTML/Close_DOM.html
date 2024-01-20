@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DOM Close</h1>
+    <pre>
+        The DOM close method is used to close the output stream It is used to indicate the finish of writing on a windows The 
+        close() Method does not required any parameter 
+
+        Note : window.close method is used to show output to news window
+    </pre>
+
+    <button onclick="fun()">submit</button>
+    <button onclick="fun1()">windows new open</button>
+    <script>
+        function fun()
+        {
+            
+            document.open();
+            document.write("Hello coder");
+            document.close();
+            
+        }
+        function fun1()
+        {
+            let x=window.open();
+            x.document.open();
+            x.document.write("Hello coder");
+            x.document.close();
+            
+        }
+    </script>
+</body>
+</html>

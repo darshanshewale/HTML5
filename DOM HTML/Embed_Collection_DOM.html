@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML DOM embeds Collection</h1>
+    <pre>
+        The DOM embeds collection property in HTML is used to return the collection of all embedded elements. 
+        The elements in the collection are sorted that appear in the source code. This property is used for read-only.
+
+        
+    </pre>
+
+    <embed id="emb" src="emb.swf">
+        <p>
+            Click the button to see the URL
+            for the embedded flash file.
+        </p>
+        <button onclick="fun()">Click Me</button>
+        <p id="show"></p>
+        <script>
+            function fun() 
+            {
+                let g = document.getElementById("emb").src;
+                document.getElementById("show").innerHTML = "URL: " + g;
+            }
+        </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE HTML5>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML DOM Doctype prototype</h1>
+    <pre>
+        The DOM doctype property is used to return the doctype of any HTML document. The DocumentType object is the name property
+        used to return the name of the object. If there is no doctype declared in the document then it returns a Null value. 
+    </pre>
+
+    <button onclick="fun()">click</button>
+    <p id="p1"></p>
+
+    <script>
+        function fun()
+        {
+            let x=document.doctype.name;
+            document.getElementById("p1").innerHTML=x;
+        }
+    </script>
+</body>
+</html>

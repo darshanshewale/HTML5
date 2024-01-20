@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DOM active element Property</h1>
+    <pre>
+        The DOM active element property is used to return the current active element in the HTML document This property
+        is ready only It give the reference of a focused element object in the document 
+    </pre>
+
+    <div onclick="fun()">
+        <h2>Active element property</h1>
+        <input type="text" placeholder="Hello">
+        <button>submit</button>
+        <p id="p1">Updates with tag on we click in div</p>
+    </div>
+
+    <script>
+        function fun()
+        {
+            let x=document.activeElement.tagName;
+            document.getElementById("p1").innerHTML=x;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML DOM URL Property</h1>
+    <pre>
+        The DOM URL property in HTML is used to return a string that contains the complete URL of the current document. 
+        The string also includes the HTTP protocol 
+    </pre>
+
+    <button onclick="fun()">click</button>
+    <p id="p1"></p>
+    <script>
+        function fun()
+        {
+            let x=document.URL;
+            document.getElementById("p1").innerHTML=x;
+        }
+    </script>
+</body>
+</html>

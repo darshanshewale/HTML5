@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>DOM anchors collection</h1>
+    <pre>
+        The HTML DOM anchors collection is used to return the collection of all a elements It only counts those a element that has 
+        the name attribute only The name  attribute of the anchor element does not support HTML5 The element  in the collection 
+        are sorted that in the sourc code 
+        Note: The DOM anchor collection has been deprecated.
+
+    </pre>
+
+        <a name="">first</a><br>
+        <a name="">second</a><br>
+        <a name="">third</a><br>
+        <a name="">fourth</a><br>
+
+        <button onclick="fun()">click here</button>
+ 
+    <p id="p1"></p>
+
+    <script>
+        function fun()
+        {
+            let x=document.anchors.length;
+            document.getElementById("p1").innerHTML="The Number of anchor tag"+ x;
+        }
+    </script>
+</body>
+</html>

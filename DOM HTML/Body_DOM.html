@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML DOM Body Property</h1>
+    <pre>
+        The HTML DOM Body property is used to set the document body  element. It only returns the content present in the body 
+        Tag. This property is used to change the present content inside the body element and sets them with the new specified
+        content. This property does not return the html element. 
+    </pre>
+
+    <button onclick="fun()">click</button>
+    <p id="p1"></p>
+
+    <script>
+        function fun()
+        {
+            let x=document.body.innerHTML;
+            document.getElementById("p1").innerHTML=x;
+            
+        }
+    </script>
+</body>
+</html>

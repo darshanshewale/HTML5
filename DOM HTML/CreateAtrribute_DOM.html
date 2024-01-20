@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .c1
+        {
+            color: green;
+            font-weight: bold;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML DOM CreateAttribute Method</h1>
+    <pre>
+        This createAttribute() method is used to create an attribute with the specified name and returns the attribute object.
+        The attribute.value property is used to set the value of the attribute and the element.setAttribute() method is used to
+        create a new attribute for an element. This method() contains the name of the created attribute as a parameter value. 
+
+
+    </pre>
+
+    <button onclick="fun()">click</button>
+    <script>
+       function fun() {
+            let tag_name =
+                document.getElementsByTagName("h1")[0];
+            let attr =
+                document.createAttribute("class");
+            attr.value = "c1";
+            tag_name.setAttributeNode(attr);
+        }
+    </script>
+</body>
+</html>

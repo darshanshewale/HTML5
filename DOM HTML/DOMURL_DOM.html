@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DOmain basedURL Property </h1>
+    <pre>
+        This is used to return the base uniform resource Indentifier (URL)of the document.This property is used for readonly. This
+        Property returns a string value that represents the base URI Of the Page
+
+        node.baseURL  </pre>
+
+        <button onclick="fun()">click</button>
+        <p id="p1"></p>
+
+        <script>
+            function fun()
+            {
+                let x=document.baseURI;
+                document.getElementById("p1").innerHTML=x;
+                
+            }
+        </script>
+</body>
+</html>
