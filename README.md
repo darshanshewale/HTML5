@@ -26,7 +26,7 @@ To use this repository, you need to have a web browser and a code editor. You ca
 
 You can clone or download this repository from GitHub and open the HTML files in your browser to see the output. You can also edit the HTML files in your code editor to modify or experiment with the code.
 
-To clone this repository, run the following command in your terminal:
+To clone this repository:
 
 
 To download this repository, click on the green “Code” button on the GitHub page and select “Download ZIP”. Then, extract the ZIP file and open the folder in your code editor.
