@@ -39,8 +39,6 @@ HTML layout and positioning:  HTML div and span elements to create a web page th
 HTML semantic elements: HTML semantic elements to create a web page that has a meaningful structure and content. 
 
 
-# Contributing 🤝🤝
-If you want to contribute to this project, you are welcome to do so. You can submit issues, pull requests, or feedback to improve the quality and the content of this project. Please follow these guidelines when contributing:
 
 Use clear and descriptive titles and messages for your issues and pull requests.
 Test your code before submitting it.
